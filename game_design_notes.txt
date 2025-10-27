@@ -1,0 +1,9 @@
+-integrate other forms of player-to-game design connection rather than just material, in-game rewards
+-tying in emotional reward is also important for a game
+-character design and tying in the appearance, abilities and background makes a character interesting and fun
+-human brain can only remember around 5 to 9 things at once in its short term memory
+-three is a magic number
+-UI is how the players interact with the game
+-feature creep (where too many irrelevant features distract from the core of your game) is a huge problem
+  -gimmicks/gimmicky and specific features can be good, but they should not be overdone
+  -also make sure that these features can either be small or be relevant to the game's core
