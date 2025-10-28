@@ -2,11 +2,13 @@
 
 [ext_resource type="Texture2D" uid="uid://xmof8hhnuuht" path="res://Files/cool_connor.png" id="1_wtcfe"]
 [ext_resource type="Script" uid="uid://dka0lwask0eyr" path="res://player_movement.gd" id="2_0e48y"]
-[ext_resource type="Texture2D" uid="uid://m3q46euard4n" path="res://cool_star.png" id="3_epypp"]
+[ext_resource type="Texture2D" uid="uid://6rydbf6htob0" path="res://Files/Scripts/Untitled.png" id="3_epypp"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_epypp"]
+radius = 372992.0
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_epypp"]
+size = Vector2(2.65143e+06, 16.6095)
 
 [node name="Node2D" type="Node2D"]
 scale = Vector2(1e-05, 1e-05)
@@ -24,6 +26,8 @@ scale = Vector2(5, 5)
 script = ExtResource("2_0e48y")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Cool Connor/CharacterBody2D"]
+position = Vector2(-200000, -20000.2)
+scale = Vector2(-4.558, 5)
 shape = SubResource("CircleShape2D_epypp")
 
 [node name="Sprite2D" type="Sprite2D" parent="Cool Connor/CharacterBody2D"]
@@ -32,11 +36,14 @@ scale = Vector2(12430.9, 17813.3)
 texture = ExtResource("1_wtcfe")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
-position = Vector2(-5.02e+07, -2.69e+07)
+position = Vector2(2.88e+07, -7.9e+06)
+scale = Vector2(5, 5)
+
+[node name="Untitled" type="Sprite2D" parent="StaticBody2D"]
+scale = Vector2(4072, 4000)
+texture = ExtResource("3_epypp")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(1, 1)
+scale = Vector2(1.75, 154129)
 shape = SubResource("RectangleShape2D_epypp")
-
-[node name="CoolStar" type="Sprite2D" parent="StaticBody2D"]
-scale = Vector2(71318.4, 81452.1)
-texture = ExtResource("3_epypp")
