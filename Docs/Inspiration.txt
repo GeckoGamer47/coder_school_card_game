@@ -1,0 +1,37 @@
+Inspiration and features I like:
+-Slay the Spire
+	-effect system
+	-relics
+	-map system (especially so)
+-Undertale
+	-player turn vs enemy turn
+	-humor
+-Rounds
+	-some secondary stats being affected by 	 things like damage and health
+-Enter the Gungeon
+	-bullet hell
+	-goofy weapons and references
+	-dodgerolls
+-Risk of Rain 2
+	-items
+	-abilities
+-Dead cells
+	-weapon modifiers
+	-dodgerolls
+
+
+What I can carry over:
+-Slay the Spire
+	-map system
+	-relics
+-Undertale
+	-player turn vs enemy turn (maybe)
+-Rounds
+	-some secondary stats being affected by 	 things like damage and health (maybe)
+-Enter the Gungeon
+	-dodgerolls
+	-goofy weapons (maybe)
+	-bullet hell
+	-references
+-Dead Cells
+	-item modifiers

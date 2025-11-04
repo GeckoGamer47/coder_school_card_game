@@ -1,0 +1,25 @@
+Decide:
+
+
+Idea:
+-Each character has their own weapon with different stats
+
+-The player uses the deck during their turn like a normal deckbuilder
+
+-During the enemy's turn, however, the weapon uses the cards like ammo
+
+-each card has a player turn effect and an enemy turn effect
+
+-Bullet speed dependent on weapon, not bullet
+
+
+either have both separately, each relic has a gun enhancement, or each relic has a random gun enhancement to go with it-
+{
+-weapon enhancements - affect every bullet and/or the gun's stats
+
+-relics that affect the card gameplay
+}
+
+-each character has its own ability (eg dash/dodgeroll, shield, etc)
+
+-player picks a weapon for the run
