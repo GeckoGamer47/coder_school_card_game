@@ -1,10 +1,11 @@
-[gd_scene load_steps=8 format=3 uid="uid://ccc0yh283x862"]
+[gd_scene load_steps=9 format=3 uid="uid://ccc0yh283x862"]
 
-[ext_resource type="Script" uid="uid://dka0lwask0eyr" path="res://Files/Scripts/Action Scripts/player_movement.gd" id="2_0e48y"]
-[ext_resource type="Texture2D" uid="uid://xmof8hhnuuht" path="res://Files/Sprites/cool_connor.png" id="2_0hol4"]
+[ext_resource type="Script" uid="uid://dka0lwask0eyr" path="res://player_movement.gd" id="2_0e48y"]
+[ext_resource type="Texture2D" uid="uid://xmof8hhnuuht" path="res://Files/cool_connor.png" id="2_0hol4"]
 [ext_resource type="Texture2D" uid="uid://6rydbf6htob0" path="res://Files/Scripts/Untitled.png" id="3_epypp"]
 [ext_resource type="Texture2D" uid="uid://l30h4miuvso6" path="res://Files/Sprites/New Piskel.png" id="3_q6r6c"]
-[ext_resource type="Script" uid="uid://bxkud31nf01yp" path="res://gun_face_mouse.gd" id="4_q6r6c"]
+[ext_resource type="Script" uid="uid://bo8luni8pju82" path="res://weapon_lside.gd" id="4_kdubu"]
+[ext_resource type="Script" uid="uid://bqu6bsvu7t2m2" path="res://weapon_rside.gd" id="5_d21ai"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_epypp"]
 radius = 372992.0
@@ -21,44 +22,47 @@ scale = Vector2(5, 5)
 
 [node name="Cool Connor" type="Node2D" parent="."]
 visibility_layer = 5
-position = Vector2(1, 1)
 scale = Vector2(5, 5)
 
-[node name="CharacterBody2D" type="CharacterBody2D" parent="Cool Connor"]
+[node name="CoolConnorBody" type="CharacterBody2D" parent="Cool Connor"]
 script = ExtResource("2_0e48y")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Cool Connor/CharacterBody2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cool Connor/CoolConnorBody"]
 position = Vector2(-200000, -20000.2)
 scale = Vector2(-4.558, 5)
 shape = SubResource("CircleShape2D_epypp")
 
-[node name="CoolConnor" type="Sprite2D" parent="Cool Connor/CharacterBody2D"]
+[node name="CoolConnor" type="Sprite2D" parent="Cool Connor/CoolConnorBody"]
 z_index = 4
 position = Vector2(340000, 320000)
 scale = Vector2(14026.7, 14026.7)
 texture = ExtResource("2_0hol4")
 
-[node name="Weapon_lside" type="Sprite2D" parent="Cool Connor/CharacterBody2D"]
-z_index = 3
-position = Vector2(-2.18e+06, -200000)
-rotation = -1.5267
+[node name="Weapon_lside" type="Sprite2D" parent="Cool Connor/CoolConnorBody"]
+z_index = 4
+position = Vector2(-2.14e+06, -260000)
+rotation = 2.87195
+scale = Vector2(48446.4, 44928.4)
+texture = ExtResource("3_q6r6c")
+centered = false
+offset = Vector2(-3, -15)
+flip_v = true
+script = ExtResource("4_kdubu")
+
+[node name="Node2D" type="Node2D" parent="Cool Connor/CoolConnorBody/Weapon_lside"]
+position = Vector2(26.9657, 14.0724)
+scale = Vector2(1.00161, 0.998617)
+skew = 0.020996
+
+[node name="Weapon_rside" type="Sprite2D" parent="Cool Connor/CoolConnorBody"]
+z_index = 4
+position = Vector2(1.38e+06, 380000)
+rotation = -0.211403
 scale = Vector2(48446.4, 44928.4)
 texture = ExtResource("3_q6r6c")
 centered = false
 offset = Vector2(-2.95, -15)
-
-[node name="Marker2D" type="Marker2D" parent="Cool Connor/CharacterBody2D"]
-position = Vector2(1.58e+06, -180000)
-script = ExtResource("4_q6r6c")
-
-[node name="Weapon_rside" type="Sprite2D" parent="Cool Connor/CharacterBody2D/Marker2D"]
-z_index = 3
-position = Vector2(0.375, -20000)
-rotation = -1.7118
-scale = Vector2(48446.4, 44928.4)
-texture = ExtResource("3_q6r6c")
-centered = false
-offset = Vector2(-2.95, -15)
+script = ExtResource("5_d21ai")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 position = Vector2(4.26e+07, -1.34e+07)

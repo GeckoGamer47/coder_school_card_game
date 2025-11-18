@@ -1,0 +1,55 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1763425632
+ammo_deck_idea.jpg::CompressedTexture2D/CompressedTexture2D::6765356847565211607::1763424515::1763424820::1::::<><><>0<>0<>2fab01d92cf73557f10515e8b8979059<>res://.godot/imported/ammo_deck_idea.jpg-6374f791ff0c921e185b82e30899c0f8.ctex::
+cool_connor_move.gd::GDScript/GDScript::7780539929114049106::1763424515::0::1::::<>Node<><>0<>0<><>::
+cool_star.png::CompressedTexture2D/CompressedTexture2D::901093595990020987::1763424515::1763424820::1::::<><><>0<>0<>4d2edb0f975087fcea8463c3766ad0e5<>res://.godot/imported/cool_star.png-b1061ceddb4b37ec973ccdbf1c3312ca.ctex::
+core gameplay features.txt::TextFile/TextFile::-1::1763424515::0::1::::<><><>0<>0<><>::
+game_design_notes.txt::TextFile/TextFile::-1::1763424515::0::1::::<><><>0<>0<><>::
+gun_face_mouse.gd::GDScript::4022629073562562143::1763425468::0::1::::<>Marker2D<><>0<>0<><>::
+icon.svg::CompressedTexture2D/CompressedTexture2D::6758808341086352224::1763424515::1763424820::1::::<><><>0<>0<>7d8399003d13ff2a04ae73d0eeded7b8<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+Inspiration.txt::TextFile/TextFile::-1::1763424515::0::1::::<><><>0<>0<><>::
+node_2d.tscn::PackedScene::4918909004954165397::1763425490::0::1::::<><><>0<>0<><>::uid://dka0lwask0eyr::::res://player_movement.gd<>uid://xmof8hhnuuht::::res://Files/cool_connor.png<>uid://6rydbf6htob0::::res://Files/Scripts/Untitled.png<>uid://l30h4miuvso6::::res://Files/Sprites/New Piskel.png<>uid://bxkud31nf01yp::::res://gun_face_mouse.gd
+player_movement.gd::GDScript/GDScript::7862689212357634681::1763424515::0::1::::<>CharacterBody2D<><>0<>0<><>::
+README.md::TextFile/TextFile::-1::1763424515::0::1::::<><><>0<>0<><>::
+room.gd::GDScript/GDScript::1695209365221078033::1763424515::0::1::::Room<>StaticBody2D<><>0<>0<><>::
+static_body_2d.gd::GDScript/GDScript::8909135651073488928::1763424515::0::1::::Star<>StaticBody2D<><>0<>0<><>::
+weapon_rside.gd::GDScript/GDScript::3552614728365924983::1763424515::0::1::::<>Sprite2D<><>0<>0<><>::
+::res://Docs/::1763424514
+core gameplay features.txt::TextFile/TextFile::-1::1763424514::0::1::::<><><>0<>0<><>::
+game_design_notes.txt::TextFile/TextFile::-1::1763424514::0::1::::<><><>0<>0<><>::
+Inspiration.txt::TextFile/TextFile::-1::1763424514::0::1::::<><><>0<>0<><>::
+::res://Files/::1763424820
+cool_connor.png::CompressedTexture2D/CompressedTexture2D::1639976648012132577::1763424515::1763424820::1::::<><><>0<>0<>89bca5eb7b71f4fc1b9f3ae79e5f0251<>res://.godot/imported/cool_connor.png-0155933c8fa242863c10c66ee2809634.ctex::
+::res://Files/Scripts/::1763424820
+Classes.gd::GDScript/GDScript::6044005525562099741::1763424515::0::1::::<>RefCounted<><>0<>0<><>::
+Cool_Player.gd::GDScript/GDScript::7786495179353485593::1763424515::0::1::::<>Character<><>0<>0<><>::
+Effects.gd::GDScript/GDScript::545654268194455607::1763424515::0::1::::Effect<>Node<><>0<>0<><>::
+Stone_Golem.gd::GDScript/GDScript::2365450339691863231::1763424515::0::1::::Stone_Golem<>Enemy<><>0<>0<><>::
+Untitled.png::CompressedTexture2D/CompressedTexture2D::2212411201472117659::1763424515::1763424818::1::::<><><>0<>0<>5c83066ad848d3cfee92efbca67f6104<>res://.godot/imported/Untitled.png-0a3ede496be36fcb5dbd773b81941ea3.ctex::
+::res://Files/Scripts/Action Scripts/::1763424514
+gun_attack_code.gd::GDScript/GDScript::3240740796873469785::1763424514::0::1::::<>CharacterBody2D<><>0<>0<><>::
+gun_face_mouse.gd::GDScript/GDScript::5369067000889623125::1763424514::0::1::::<>Node<><>0<>0<><>::
+player_movement.gd::GDScript/GDScript::7862689212357634681::1763424514::0::1::::<>CharacterBody2D<><>0<>0<><>::
+::res://Files/Scripts/Card/::1763424515
+Card_class.gd::GDScript/GDScript::6159794424065458202::1763424515::0::1::::Card<>Node<><>0<>0<><>::
+Misc.gd::GDScript/GDScript::1586157436727825472::1763424515::0::1::::<>Node<><>0<>0<><>::
+::res://Files/Scripts/Card/Attack_List/::1763424514
+Attack.gd::GDScript/GDScript::9129584519402826905::1763424514::0::1::::Attack<>Card<><>0<>0<><>::
+Attack_Template.gd::GDScript/GDScript::1465540542442552351::1763424514::0::1::::Attack_Template<>Attack<><>0<>0<><>::
+CConnor_Cool_Attack.gd::GDScript/GDScript::5773129569376514510::1763424514::0::1::::CConnor_Cool_Attack<>Attack<><>0<>0<><>::
+SGolem.Armor_Crack.gd::GDScript/GDScript::4426365482340726139::1763424514::0::1::::SGolem_Armor_Crack<>Attack<><>0<>0<><>::
+SGolem_Big_Attack.gd::GDScript/GDScript::6265318943901649534::1763424514::0::1::::SGolem_Big_Attack<>Attack<><>0<>0<><>::
+SGolem_Slash.gd::GDScript/GDScript::3323992789137928594::1763424514::0::1::::SGolem_Slash<>Attack<><>0<>0<><>::
+::res://Files/Scripts/Card/Defend_List/::1763424515
+Defend.gd::GDScript/GDScript::596855156667422200::1763424515::0::1::::Defend<>Card<><>0<>0<><>::
+Defend_Template.gd::GDScript/GDScript::2610110860417067695::1763424515::0::1::::Defend_Template<>Defend<><>0<>0<><>::
+SGolem_Guard.gd::GDScript/GDScript::26900714827201989::1763424515::0::1::::SGolem_Guard<>Defend<><>0<>0<><>::
+SGolem_Stone_Defense.gd::GDScript/GDScript::4131148798792613323::1763424515::0::1::::SGolem_Stone_Defense<>Defend<><>0<>0<><>::
+::res://Files/Scripts/Character_class/::1763424515
+Character.gd::GDScript/GDScript::4064842902139399162::1763424515::0::1::::Character<>Enemy<><>0<>0<><>::
+Enemy.gd::GDScript/GDScript::1811487390427429515::1763424515::0::1::::Enemy<>Node<><>0<>0<><>::
+::res://Files/Sprites/::1763424820
+ammo_deck_idea.jpg::CompressedTexture2D/CompressedTexture2D::6765356847565211607::1763424515::1763424820::1::::<><><>0<>0<>01c3ca1ae468c8f6787b88e5be9377ec<>res://.godot/imported/ammo_deck_idea.jpg-e6a9d62c3f172e7ebb7ba5faaa201a2b.ctex::
+cool_connor.png::CompressedTexture2D/CompressedTexture2D::1639976648012132577::1763424515::1763424820::1::::<><><>0<>0<>f12b5f46bb491f32a1036467d303d961<>res://.godot/imported/cool_connor.png-3ce72e3ca44bfefe764d0e572f4529a6.ctex::
+cool_star.png::CompressedTexture2D/CompressedTexture2D::901093595990020987::1763424515::1763424820::1::::<><><>0<>0<>684f1cbf4c006f7fe4849b523104d68a<>res://.godot/imported/cool_star.png-ad79da98f72f023964dc5d91c10f3ec0.ctex::
+New Piskel.png::CompressedTexture2D/CompressedTexture2D::831411824614389803::1763424515::1763424820::1::::<><><>0<>0<>dcfec311dc2e511b13637102da904989<>res://.godot/imported/New Piskel.png-3ebd0b34eaa4bc70eb6af1626e7b24b0.ctex::
