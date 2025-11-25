@@ -1,11 +1,14 @@
-[gd_scene load_steps=9 format=3 uid="uid://ccc0yh283x862"]
+[gd_scene load_steps=12 format=3 uid="uid://ccc0yh283x862"]
 
+[ext_resource type="Script" uid="uid://cr1ymk6jgjtfi" path="res://variable_list.gd" id="1_d21ai"]
 [ext_resource type="Script" uid="uid://dka0lwask0eyr" path="res://player_movement.gd" id="2_0e48y"]
 [ext_resource type="Texture2D" uid="uid://xmof8hhnuuht" path="res://Files/cool_connor.png" id="2_0hol4"]
 [ext_resource type="Texture2D" uid="uid://6rydbf6htob0" path="res://Files/Scripts/Untitled.png" id="3_epypp"]
 [ext_resource type="Texture2D" uid="uid://l30h4miuvso6" path="res://Files/Sprites/New Piskel.png" id="3_q6r6c"]
 [ext_resource type="Script" uid="uid://bo8luni8pju82" path="res://weapon_lside.gd" id="4_kdubu"]
 [ext_resource type="Script" uid="uid://bqu6bsvu7t2m2" path="res://weapon_rside.gd" id="5_d21ai"]
+[ext_resource type="Script" uid="uid://c8gae032j0saf" path="res://crosshair.gd" id="7_4d7sh"]
+[ext_resource type="Texture2D" uid="uid://bg85ows3cwgbc" path="res://crosshair - Copy (2).png" id="8_4d7sh"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_epypp"]
 radius = 372992.0
@@ -15,6 +18,7 @@ size = Vector2(2.65143e+06, 16.6095)
 
 [node name="Node2D" type="Node2D"]
 scale = Vector2(1e-05, 1e-05)
+script = ExtResource("1_d21ai")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(1, 1)
@@ -41,7 +45,7 @@ texture = ExtResource("2_0hol4")
 [node name="Weapon_lside" type="Sprite2D" parent="Cool Connor/CoolConnorBody"]
 z_index = 4
 position = Vector2(-2.14e+06, -260000)
-rotation = 2.87195
+rotation = 3.84147
 scale = Vector2(48446.4, 44928.4)
 texture = ExtResource("3_q6r6c")
 centered = false
@@ -49,7 +53,7 @@ offset = Vector2(-3, -15)
 flip_v = true
 script = ExtResource("4_kdubu")
 
-[node name="Node2D" type="Node2D" parent="Cool Connor/CoolConnorBody/Weapon_lside"]
+[node name="Barrel" type="Node2D" parent="Cool Connor/CoolConnorBody/Weapon_lside"]
 position = Vector2(26.9657, 14.0724)
 scale = Vector2(1.00161, 0.998617)
 skew = 0.020996
@@ -63,6 +67,15 @@ texture = ExtResource("3_q6r6c")
 centered = false
 offset = Vector2(-2.95, -15)
 script = ExtResource("5_d21ai")
+
+[node name="Crosshair" type="Node2D" parent="Cool Connor/CoolConnorBody"]
+physics_interpolation_mode = 2
+script = ExtResource("7_4d7sh")
+
+[node name="Crosshair_image" type="Sprite2D" parent="Cool Connor/CoolConnorBody/Crosshair"]
+physics_interpolation_mode = 2
+scale = Vector2(10434.8, 10434.8)
+texture = ExtResource("8_4d7sh")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 position = Vector2(4.26e+07, -1.34e+07)

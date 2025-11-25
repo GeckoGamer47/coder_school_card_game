@@ -1,19 +1,23 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1763425632
+::res://::1764032068
 ammo_deck_idea.jpg::CompressedTexture2D/CompressedTexture2D::6765356847565211607::1763424515::1763424820::1::::<><><>0<>0<>2fab01d92cf73557f10515e8b8979059<>res://.godot/imported/ammo_deck_idea.jpg-6374f791ff0c921e185b82e30899c0f8.ctex::
 cool_connor_move.gd::GDScript/GDScript::7780539929114049106::1763424515::0::1::::<>Node<><>0<>0<><>::
 cool_star.png::CompressedTexture2D/CompressedTexture2D::901093595990020987::1763424515::1763424820::1::::<><><>0<>0<>4d2edb0f975087fcea8463c3766ad0e5<>res://.godot/imported/cool_star.png-b1061ceddb4b37ec973ccdbf1c3312ca.ctex::
 core gameplay features.txt::TextFile/TextFile::-1::1763424515::0::1::::<><><>0<>0<><>::
+crosshair - Copy (2).png::CompressedTexture2D::2877525906898849292::1764032049::1764032070::1::::<><><>0<>0<>27dc5bafa3a0e73789713f0b211ed6bc<>res://.godot/imported/crosshair - Copy (2).png-1860dea498a166530e4078cdf29de504.ctex::
 game_design_notes.txt::TextFile/TextFile::-1::1763424515::0::1::::<><><>0<>0<><>::
-gun_face_mouse.gd::GDScript::4022629073562562143::1763425468::0::1::::<>Marker2D<><>0<>0<><>::
+gun_face_mouse.gd::GDScript/GDScript::4022629073562562143::1763427058::0::1::::<>Sprite2D<><>0<>0<><>::
 icon.svg::CompressedTexture2D/CompressedTexture2D::6758808341086352224::1763424515::1763424820::1::::<><><>0<>0<>7d8399003d13ff2a04ae73d0eeded7b8<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 Inspiration.txt::TextFile/TextFile::-1::1763424515::0::1::::<><><>0<>0<><>::
-node_2d.tscn::PackedScene::4918909004954165397::1763425490::0::1::::<><><>0<>0<><>::uid://dka0lwask0eyr::::res://player_movement.gd<>uid://xmof8hhnuuht::::res://Files/cool_connor.png<>uid://6rydbf6htob0::::res://Files/Scripts/Untitled.png<>uid://l30h4miuvso6::::res://Files/Sprites/New Piskel.png<>uid://bxkud31nf01yp::::res://gun_face_mouse.gd
+node_2d.tscn::PackedScene::4918909004954165397::1764031961::0::1::::<><><>0<>0<><>::uid://cr1ymk6jgjtfi::::res://variable_list.gd<>uid://dka0lwask0eyr::::res://player_movement.gd<>uid://xmof8hhnuuht::::res://Files/cool_connor.png<>uid://6rydbf6htob0::::res://Files/Scripts/Untitled.png<>uid://l30h4miuvso6::::res://Files/Sprites/New Piskel.png<>uid://bo8luni8pju82::::res://weapon_lside.gd<>uid://bqu6bsvu7t2m2::::res://weapon_rside.gd<>uid://c8gae032j0saf::::res://crosshair.gd<>uid://ch4lu8gvyukdv::::res://crosshair.png
 player_movement.gd::GDScript/GDScript::7862689212357634681::1763424515::0::1::::<>CharacterBody2D<><>0<>0<><>::
 README.md::TextFile/TextFile::-1::1763424515::0::1::::<><><>0<>0<><>::
+crosshair.gd::GDScript::7101467974719313157::1764031941::0::1::::<>Node2D<><>0<>0<><>::
 room.gd::GDScript/GDScript::1695209365221078033::1763424515::0::1::::Room<>StaticBody2D<><>0<>0<><>::
 static_body_2d.gd::GDScript/GDScript::8909135651073488928::1763424515::0::1::::Star<>StaticBody2D<><>0<>0<><>::
-weapon_rside.gd::GDScript/GDScript::3552614728365924983::1763424515::0::1::::<>Sprite2D<><>0<>0<><>::
+variable_list.gd::GDScript::6021204741731311750::1764030570::0::1::::<>Node2D<><>0<>0<><>::
+weapon_lside.gd::GDScript::3437893259989835301::1764030855::0::1::::<>Sprite2D<><>0<>0<><>::
+weapon_rside.gd::GDScript::3552614728365924983::1764030855::0::1::::<>Sprite2D<><>0<>0<><>::
 ::res://Docs/::1763424514
 core gameplay features.txt::TextFile/TextFile::-1::1763424514::0::1::::<><><>0<>0<><>::
 game_design_notes.txt::TextFile/TextFile::-1::1763424514::0::1::::<><><>0<>0<><>::

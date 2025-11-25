@@ -1,4 +1,7 @@
 res://node_2d.tscn
-res://gun_face_mouse.gd
+res://ror_l_gun_side.gd
 res://weapon_lside.gd
 res://weapon_rside.gd
+res://rorl_gun_side.gd
+res://variable_list.gd
+res://crosshair.gd

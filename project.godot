@@ -15,6 +15,10 @@ run/main_scene="uid://ccc0yh283x862"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
 
+[autoload]
+
+variable_list="*res://variable_list.gd"
+
 [input]
 
 right={

@@ -12,7 +12,10 @@ func _process(delta):
 	rotation=direction.angle()
 	
 	#hide weapons if they are on the opposite side as the mousee
-	if mouse_pos[0]>=get_parent().global_position[0]:
-		visible=false
-	else:
+	if mouse_pos[0]>=get_parent().global_position[0]+20 and variable_list.RorL_gun_side=='l':
+		variable_list.RorL_gun_side='r'
+		
+	if variable_list.RorL_gun_side=='l':
 		visible=true
+	else:
+		visible=false
