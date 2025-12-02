@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://ccc0yh283x862"]
+[gd_scene load_steps=14 format=3 uid="uid://ccc0yh283x862"]
 
 [ext_resource type="Script" uid="uid://cr1ymk6jgjtfi" path="res://variable_list.gd" id="1_d21ai"]
 [ext_resource type="Script" uid="uid://dka0lwask0eyr" path="res://player_movement.gd" id="2_0e48y"]
@@ -8,7 +8,9 @@
 [ext_resource type="Script" uid="uid://bo8luni8pju82" path="res://weapon_lside.gd" id="4_kdubu"]
 [ext_resource type="Script" uid="uid://bqu6bsvu7t2m2" path="res://weapon_rside.gd" id="5_d21ai"]
 [ext_resource type="Script" uid="uid://c8gae032j0saf" path="res://crosshair.gd" id="7_4d7sh"]
+[ext_resource type="Script" uid="uid://bp0abuyvrr63a" path="res://dodge_time.gd" id="7_hqns4"]
 [ext_resource type="Texture2D" uid="uid://bg85ows3cwgbc" path="res://crosshair - Copy (2).png" id="8_4d7sh"]
+[ext_resource type="Script" uid="uid://bafp45shh5hbl" path="res://crosshair_image.gd" id="9_ir8iy"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_epypp"]
 radius = 372992.0
@@ -68,14 +70,8 @@ centered = false
 offset = Vector2(-2.95, -15)
 script = ExtResource("5_d21ai")
 
-[node name="Crosshair" type="Node2D" parent="Cool Connor/CoolConnorBody"]
-physics_interpolation_mode = 2
-script = ExtResource("7_4d7sh")
-
-[node name="Crosshair_image" type="Sprite2D" parent="Cool Connor/CoolConnorBody/Crosshair"]
-physics_interpolation_mode = 2
-scale = Vector2(10434.8, 10434.8)
-texture = ExtResource("8_4d7sh")
+[node name="dodge_time" type="Timer" parent="Cool Connor/CoolConnorBody"]
+script = ExtResource("7_hqns4")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 position = Vector2(4.26e+07, -1.34e+07)
@@ -92,3 +88,14 @@ shape = SubResource("RectangleShape2D_epypp")
 
 [node name="WeaponThing" type="Sprite2D" parent="."]
 position = Vector2(1.3e+07, -8e+06)
+
+[node name="Crosshair" type="Node2D" parent="."]
+physics_interpolation_mode = 2
+position = Vector2(-2.26e+07, -700000)
+scale = Vector2(5, 5)
+script = ExtResource("7_4d7sh")
+
+[node name="Crosshair_image" type="Sprite2D" parent="Crosshair"]
+scale = Vector2(10434.8, 10434.8)
+texture = ExtResource("8_4d7sh")
+script = ExtResource("9_ir8iy")
