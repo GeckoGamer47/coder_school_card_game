@@ -7,7 +7,7 @@ func _process(delta):
 	var mouse_pos=get_global_mouse_position()
 	var direction=mouse_pos - global_position
 	
-	print(mouse_pos)
+	#print(mouse_pos)
 	
 	rotation=direction.angle()
 	
