@@ -1,16 +1,14 @@
-[gd_scene load_steps=15 format=3 uid="uid://ccc0yh283x862"]
+[gd_scene load_steps=16 format=3 uid="uid://ccc0yh283x862"]
 
 [ext_resource type="Script" uid="uid://cr1ymk6jgjtfi" path="res://variable_list.gd" id="1_d21ai"]
 [ext_resource type="Script" uid="uid://dka0lwask0eyr" path="res://player_movement.gd" id="2_0e48y"]
 [ext_resource type="Texture2D" uid="uid://l30h4miuvso6" path="res://Files/Sprites/New Piskel.png" id="3_q6r6c"]
+[ext_resource type="Script" uid="uid://5h3ymjsumako" path="res://animated_sprite_2d.gd" id="4_4d7sh"]
 [ext_resource type="Script" uid="uid://bo8luni8pju82" path="res://weapon_lside.gd" id="4_kdubu"]
 [ext_resource type="Script" uid="uid://bqu6bsvu7t2m2" path="res://weapon_rside.gd" id="5_d21ai"]
 [ext_resource type="Script" uid="uid://c8gae032j0saf" path="res://crosshair.gd" id="7_4d7sh"]
 [ext_resource type="Texture2D" uid="uid://bg85ows3cwgbc" path="res://crosshair - Copy (2).png" id="8_4d7sh"]
-[ext_resource type="Texture2D" uid="uid://igh3scs4ytks" path="res://PC _ Computer - Enter the Gungeon - Playable Characters - The Marine.png" id="8_rj586"]
-
-[sub_resource type="CircleShape2D" id="CircleShape2D_epypp"]
-radius = 372992.0
+[ext_resource type="Texture2D" uid="uid://c1qmi2hcx7yue" path="res://PC _ Computer - Enter the Gungeon - Playable Characters - The Marine.png" id="8_rj586"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_4d7sh"]
 atlas = ExtResource("8_rj586")
@@ -44,9 +42,12 @@ animations = [{
 "texture": SubResource("AtlasTexture_x0ka3")
 }],
 "loop": true,
-"name": &"default",
+"name": &"idle",
 "speed": 5.0
 }]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_epypp"]
+radius = 372992.0
 
 [node name="Player" type="Node2D"]
 scale = Vector2(1e-05, 1e-05)
@@ -63,14 +64,21 @@ scale = Vector2(5, 5)
 [node name="CoolConnorBody" type="CharacterBody2D" parent="Cool Connor"]
 script = ExtResource("2_0e48y")
 
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Cool Connor/CoolConnorBody"]
+texture_filter = 1
+scale = Vector2(164706.45, 164706.45)
+sprite_frames = SubResource("SpriteFrames_0h7mo")
+animation = &"idle"
+frame_progress = 0.23948085
+script = ExtResource("4_4d7sh")
+
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Cool Connor/CoolConnorBody"]
-position = Vector2(-200000, -20000.2)
 scale = Vector2(-4.558, 5)
 shape = SubResource("CircleShape2D_epypp")
 
 [node name="Weapon_lside" type="Sprite2D" parent="Cool Connor/CoolConnorBody"]
 z_index = 4
-position = Vector2(-2.14e+06, -260000)
+position = Vector2(-1180000, 1120000)
 rotation = 3.84147
 scale = Vector2(48446.4, 44928.4)
 texture = ExtResource("3_q6r6c")
@@ -86,7 +94,7 @@ skew = 0.020996
 
 [node name="Weapon_rside" type="Sprite2D" parent="Cool Connor/CoolConnorBody"]
 z_index = 4
-position = Vector2(1.38e+06, 380000)
+position = Vector2(1080000, 1100000)
 rotation = -0.211403
 scale = Vector2(48446.4, 44928.4)
 texture = ExtResource("3_q6r6c")
@@ -103,13 +111,10 @@ physics_interpolation_mode = 2
 scale = Vector2(10434.8, 10434.8)
 texture = ExtResource("8_4d7sh")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Cool Connor/CoolConnorBody"]
-sprite_frames = SubResource("SpriteFrames_0h7mo")
-
 [node name="WeaponThing" type="Sprite2D" parent="."]
-position = Vector2(1.3e+07, -8e+06)
+position = Vector2(13000000, -8000000)
 
 [node name="Crosshair-Copy(2)" type="Sprite2D" parent="."]
-position = Vector2(-4.51e+07, 5.9e+06)
+position = Vector2(-45100000, 5900000)
 texture = ExtResource("8_4d7sh")
 script = ExtResource("7_4d7sh")
