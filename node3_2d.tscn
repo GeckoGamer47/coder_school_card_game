@@ -1,0 +1,112 @@
+[gd_scene load_steps=16 format=3 uid="uid://bm6ua3pdo7l0d"]
+
+[ext_resource type="Script" uid="uid://cr1ymk6jgjtfi" path="res://variable_list.gd" id="1_i35wc"]
+[ext_resource type="Script" uid="uid://dka0lwask0eyr" path="res://player_movement.gd" id="2_ivs3w"]
+[ext_resource type="Texture2D" uid="uid://c1qmi2hcx7yue" path="res://PC _ Computer - Enter the Gungeon - Playable Characters - The Marine.png" id="3_60soh"]
+[ext_resource type="Script" uid="uid://5h3ymjsumako" path="res://animated_sprite_2d.gd" id="4_gljo5"]
+[ext_resource type="Texture2D" uid="uid://l30h4miuvso6" path="res://Files/Sprites/New Piskel.png" id="5_i3gow"]
+[ext_resource type="Script" uid="uid://bo8luni8pju82" path="res://weapon_lside.gd" id="6_fhbrd"]
+[ext_resource type="Script" uid="uid://bqu6bsvu7t2m2" path="res://weapon_rside.gd" id="7_5f8oc"]
+[ext_resource type="Script" uid="uid://c8gae032j0saf" path="res://crosshair.gd" id="8_6psoa"]
+[ext_resource type="Texture2D" uid="uid://bg85ows3cwgbc" path="res://crosshair - Copy (2).png" id="9_s7wus"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4d7sh"]
+atlas = ExtResource("3_60soh")
+region = Rect2(22, 39, 17, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ir8iy"]
+atlas = ExtResource("3_60soh")
+region = Rect2(41, 39, 17, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hqns4"]
+atlas = ExtResource("3_60soh")
+region = Rect2(60, 39, 17, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x0ka3"]
+atlas = ExtResource("3_60soh")
+region = Rect2(79, 39, 17, 20)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_0h7mo"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4d7sh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ir8iy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hqns4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x0ka3")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_epypp"]
+radius = 372992.0
+
+[node name="Player" type="Node2D"]
+scale = Vector2(1e-05, 1e-05)
+script = ExtResource("1_i35wc")
+
+[node name="Cool Connor" type="Node2D" parent="."]
+visibility_layer = 5
+scale = Vector2(5, 5)
+
+[node name="CoolConnorBody" type="CharacterBody2D" parent="Cool Connor"]
+script = ExtResource("2_ivs3w")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Cool Connor/CoolConnorBody"]
+texture_filter = 1
+scale = Vector2(164706, 164706)
+sprite_frames = SubResource("SpriteFrames_0h7mo")
+animation = &"idle"
+frame_progress = 0.239481
+script = ExtResource("4_gljo5")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cool Connor/CoolConnorBody"]
+scale = Vector2(-4.558, 5)
+shape = SubResource("CircleShape2D_epypp")
+
+[node name="Weapon_lside" type="Sprite2D" parent="Cool Connor/CoolConnorBody"]
+z_index = 4
+position = Vector2(-1.18e+06, 1.12e+06)
+rotation = 3.84147
+scale = Vector2(48446.4, 44928.4)
+texture = ExtResource("5_i3gow")
+centered = false
+offset = Vector2(-3, -15)
+flip_v = true
+script = ExtResource("6_fhbrd")
+
+[node name="Barrel" type="Node2D" parent="Cool Connor/CoolConnorBody/Weapon_lside"]
+position = Vector2(26.9657, 14.0724)
+scale = Vector2(1.00161, 0.998617)
+skew = 0.020996
+
+[node name="Weapon_rside" type="Sprite2D" parent="Cool Connor/CoolConnorBody"]
+z_index = 4
+position = Vector2(1.08e+06, 1.1e+06)
+rotation = -0.211403
+scale = Vector2(48446.4, 44928.4)
+texture = ExtResource("5_i3gow")
+centered = false
+offset = Vector2(-2.95, -15)
+script = ExtResource("7_5f8oc")
+
+[node name="Crosshair" type="Node2D" parent="Cool Connor/CoolConnorBody"]
+physics_interpolation_mode = 2
+script = ExtResource("8_6psoa")
+
+[node name="Crosshair_image" type="Sprite2D" parent="Cool Connor/CoolConnorBody/Crosshair"]
+physics_interpolation_mode = 2
+scale = Vector2(10434.8, 10434.8)
+texture = ExtResource("9_s7wus")
+
+[node name="WeaponThing" type="Sprite2D" parent="."]
+position = Vector2(-3.58e+07, -3.3e+06)
+scale = Vector2(2.1144e+06, 2.1144e+06)

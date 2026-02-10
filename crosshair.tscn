@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://by3ps0qw8435o"]
+
+[ext_resource type="Script" uid="uid://c8gae032j0saf" path="res://crosshair.gd" id="1_ly6fr"]
+[ext_resource type="Texture2D" uid="uid://bg85ows3cwgbc" path="res://crosshair - Copy (2).png" id="2_4sp0m"]
+
+[node name="Crosshair" type="Node2D"]
+physics_interpolation_mode = 2
+script = ExtResource("1_ly6fr")
+
+[node name="Crosshair_image" type="Sprite2D" parent="."]
+physics_interpolation_mode = 2
+visible = false
+scale = Vector2(10434.8, 10434.8)
+texture = ExtResource("2_4sp0m")

@@ -12,12 +12,16 @@ config_version=5
 
 config/name="card_game"
 run/main_scene="uid://ccc0yh283x862"
-config/features=PackedStringArray("4.5", "Forward Plus")
+config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
 
 [autoload]
 
 variable_list="*res://variable_list.gd"
+
+[display]
+
+mouse_cursor/custom_image="uid://bg85ows3cwgbc"
 
 [input]
 

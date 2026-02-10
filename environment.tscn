@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://ccc0yh283x862" path="res://node_2d.tscn" id="3_wetts"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_00014"]
-size = Vector2(2651430, 16.6095)
+size = Vector2(2.65143e+06, 16.6095)
 
 [sub_resource type="TileMapPattern" id="TileMapPattern_wetts"]
 tile_data = PackedInt32Array(0, 1, 1, 65536, 1, 2, 131072, 1, 2, 196608, 1, 2, 262144, 1, 3, 1, 65537, 1, 65537, 262145, 0, 131073, 262145, 3, 196609, 131073, 2, 262145, 131073, 3, 2, 327681, 2, 65538, 65537, 3, 3, 327681, 2, 65539, 65537, 3, 4, 131073, 1, 65540, 131073, 3)
@@ -203,7 +203,7 @@ pattern_5 = SubResource("TileMapPattern_poig3")
 [node name="Environment" type="Node2D"]
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
-position = Vector2(42600000, -13400000)
+position = Vector2(4.26e+07, -1.34e+07)
 scale = Vector2(6.27998, 14.6213)
 
 [node name="Untitled" type="Sprite2D" parent="StaticBody2D"]

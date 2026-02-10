@@ -1,6 +1,8 @@
-AnimationPlayer
 AnimatedSprite2D
-TileMapLayer
+AnimationPlayer
 Node2D
-Node
 TextureRect
+Timer
+Camera2D
+TileMapLayer
+Node

@@ -9,10 +9,13 @@ func _process(delta):
 	
 	#print(mouse_pos)
 	
-	rotation=direction.angle()
+	rotation=direction.angle()-.23
+	print(get_parent().rotation)
+	print(direction.angle())
+	print(get_global_mouse_position())
 	
 	#hide weapons if they are on the opposite side as the mousee
-	if mouse_pos[0]>=get_parent().global_position[0]+20 and variable_list.RorL_gun_side=='l':
+	if mouse_pos[0]>=get_parent().get_parent().global_position[0]+20 and variable_list.RorL_gun_side=='l':
 		variable_list.RorL_gun_side='r'
 		
 	if variable_list.RorL_gun_side=='l':
